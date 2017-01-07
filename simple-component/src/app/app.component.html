@@ -1,6 +1,6 @@
 <h1>
-  {{title}}
   <div>
-    <app-simple-form></app-simple-form>
+    <input #myInput type="text">
+    <button (click)="doOnClick($event, myInput.value)">Press me!</button>
   </div>
 </h1>
