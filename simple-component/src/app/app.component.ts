@@ -7,7 +7,9 @@ import { MailService } from './mail.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+    onUpdate (id, text) {
+      this.mail.update(id, text);
+    }
   constructor(private mail: MailService) {
-
   }
 }
